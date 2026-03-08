@@ -1,4 +1,4 @@
-/* Rey Piater-Boswell */
+
 #Search>div input{
     width: 30%;
     margin-right: 0;
@@ -163,4 +163,5 @@ input[type="checkbox"]:hover, .checkLab:hover{
 
 #manuFil select{
     font-size: 18px;
+
 }
