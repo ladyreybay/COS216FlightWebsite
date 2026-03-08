@@ -1,0 +1,201 @@
+<!-- Rey Piater-Boswell u25678592 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Planes | Up&About</title>
+        <meta charset="UTF-8">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/navbar.css" rel="stylesheet" type="text/css">
+        <link href="css/planes.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.jpg" alt="Banner" class="bannerIm">
+        </header>
+        <header class="sticky">
+            <nav>
+                <ul id="navbar">
+                    <li class="not"><a href="index.html" >Book Flights</a></li>
+                    <li class="not"><a href="bookings.html">Bookings</a></li>
+                    <li><a class="current">Planes</a></li>
+                    <li class="not"><a href="favourites.html">Favourite Planes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>List of Planes in Service</h1>
+        <div id="filDiv">
+            <h2>Filters</h2>
+            <div id="filtersSearch">
+                <div id="seatTwoSlider">
+                    <label>Seat Range: <span>Value</span></label>
+                    <br>
+                    <input id="fromSlid" type="range" min="50" max="900" value="100">
+                    <input id="toSlid" type="range" min="50" max="900" value="500">
+                </div>
+                <div id="classBoxes">
+                    <label>Has Class:</label>
+                    <br>
+                    <input type="checkbox" id="first" name="firstHas"><label for="first" class="checkLab">First Class</label>
+                    <input type="checkbox" id="busi" name="busiHas"><label for="busi" class="checkLab">Business Class</label>
+                    <input type="checkbox" id="econ" name="econHas"><label for="econ" class="checkLab">Economy Class</label>
+                </div>
+                <div id="maxCargo">
+                    <label>Max Cargo Hold:</label>
+                    <input type="range" id="cargoSlid" name="cargoSlider" min="8000" max="150000" value="15000"> <span>Value</span>
+                </div>
+                <div id="maxRange">
+                    <label>Max Travel Range:</label>
+                    <input type="range" id="rangeSlid" name="rangeSlider" min="2000" max="20000" value="7000"> <span>Value</span>
+                </div>
+                <div id="manuFil">
+                    <label>Manufacturer:</label>
+                    <select>
+                        <option value="airbusSE">Airbus SE</option>
+                        <option value="boeingAirplanes">Boeing Commercial Airplanes</option>
+                        <option value="britishAircraft">British Aircraft</option>
+                        <option value="douglasCom">Douglas Aircraft Company</option>
+                    </select>
+                </div>
+                <button id="filApp">Apply</button>
+            </div>
+        </div>
+        <div>
+            <div id="Search">
+                <div class="gridSortContain">
+                    <div>
+                        <input type="text" id="searchTable" name="search" placeholder="Search for Planes"><button id="butSearch">Search</button>    
+                    </div>
+                    <div>
+                        <span>Sort by:</span>
+                        <select>
+                            <option value="man">Manufacturer</option>
+                            <option value="seats">Amount of Seats</option>
+                            <option value="range">Flight Range</option>
+                        </select><button id="butSort">Sort</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tableSec">
+                <table>
+                    <thead>
+                        <tr id="tableHeading">
+                            <th class="planeCol">Plane</th>
+                            <th colspan="2">Manufacturer & Model</th>
+                            <th>Number of Seats</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="a330Neo">
+                            <td>
+                                <a href="view.html">
+                                    <img src="images/planes/airbus330neo.webp" alt="Image of Airbus A330neo">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Airbus SE</p>
+                            </td>
+                            <td>
+                                <p>A330neo</p>
+                            </td>
+                            <td>440</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                        <tr id="boeing767">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/boeing767.jpg" alt="Image of Boeing 767">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Boeing Commercial Airplanes</p>
+                            </td>
+                            <td>
+                                <p>767-200ER</p>
+                            </td>
+                            <td>269</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                        <tr id="boeing777">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/boeing777.jpg" alt="Image of Boeing 777">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Boeing Commercial Airplanes</p>
+                            </td>
+                            <td>777X</td>
+                            <td>301</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                        <tr id="bac111">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/bac111.jpg" alt="Image of BAC One-Eleven">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>British Aircraft</p>
+                            </td>
+                            <td>
+                                <p>500</p>
+                            </td>
+                            <td>119</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                        <tr id="airbusA380">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/airbusA380.jpg" alt="Image of Airbus A380">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Airbus SE</p>                         
+                            </td>
+                            <td>
+                                <p>A380-842</p>
+                            </td>
+                            <td>525</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>   
+                        <tr id="boeing787Dream">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/boeing787Dreamliner.jpg" alt="Image of Boeing 787 Dreamliner">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Boeing Commercial Airplanes</p>
+                            </td>
+                            <td>
+                                <p>787-8</p>
+                            </td>
+                            <td>381</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                        <tr id="douglasD8">
+                            <td>
+                                <a href="">
+                                    <img src="images/planes/douglasDC8.jpg" alt="Image of Douglas DC-8">
+                                </a>
+                            </td>
+                            <td class="manCol">
+                                <p>Douglas Aircraft Company</p>
+                            </td>
+                            <td>
+                                <p>DC-8-72</p>
+                            </td>
+                            <td>259</td>
+                            <td><button class="fav">Add to Favourites</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p class="top"><a href="#top">Back to Top</a></p>
+            <p>All rights reserved to &copy;Up&About</p>
+        </footer>
+    </body>
+</html>

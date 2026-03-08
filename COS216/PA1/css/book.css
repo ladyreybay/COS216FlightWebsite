@@ -1,0 +1,77 @@
+/* Rey Piater-Boswell u25678592 */
+
+#greeting{
+    text-align: center;
+}
+
+fieldset legend{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+fieldset{
+    border-radius: 4px;
+    padding: 10px;
+    padding-top: 25px;
+    margin: 0 auto 0 auto;/* center entire fieldset */
+    width: 75%;
+    /*background-color: rgba(201, 198, 198, 0.671);*/
+    /*background-color: rgb(255, 102, 179);*/
+    background-color: rgba(255, 78, 167, 0.63);
+}
+
+fieldset #formFlexContain{
+    display: flex;
+    justify-content: space-between;  
+}
+.innerFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.innerFlex>div{
+    margin-top: 25px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(27, 216, 27);
+}
+input[type="submit"]{
+    display: flex; /* center button in fieldset */
+    margin: 30px auto 5px auto;
+    font-size: 18px;
+    width: 15%;
+    height: 45px;
+    background-color: rgb(0, 255, 21);
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    -webkit-transition: transform 0.35s ease-out;
+    -moz-transition: transform 0.35s ease-out;
+    transition: transform 0.35s ease-out;
+}
+input[type="submit"]:hover{
+    -webkit-transform: translate(2px, -3px);
+    -moz-transform: translate(2px, -3px);
+    transform: translate(2px, -3px);
+    box-shadow: -3px 5px 5px rgba(54, 54, 54, 0.664);/* Shadow in bottom left and bottom center w/ 5px blur of box */  
+}
+input:hover, select:hover, label[for$="Class"]:hover, label[for="oneWayTrip"]:hover{
+    cursor: pointer;
+}
+
+label{
+    appearance: none;/*allow styling of labels*/
+    font-size: 1.3em;
+}
+
+fieldset input[type="select"], fieldset input[type="date"], fieldset input[type="number"], fieldset select{
+    height: 35px;
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+
+input[type="date"], select[name="planeOp"]{
+    width: 45%;
+}

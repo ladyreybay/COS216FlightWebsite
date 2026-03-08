@@ -1,0 +1,51 @@
+/* Rey Piater-Boswell u25678592 */
+#navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 25px;
+    /*background-color: rgb(173, 173, 173);*/
+    /*background-color: rgb(255, 194, 232);*/
+    background-color: rgb(39, 1, 26);
+}
+#navbar>li{
+    margin: 10px;
+    padding: 5px;
+}
+#navbar a:hover{
+    /*color: #8447FF;*/
+    color: rgb(178, 247, 52);
+}
+#navbar a{
+    color: #fc97bf;
+}
+
+.sticky{
+    position: sticky;
+    top: 30px; /* Adjust top so sticky works normal */
+    z-index: 200;
+    transform: translateY(-30px); /* Move nav up to cover open bit between it and banner */
+}
+
+.bannerIm{
+    width: 100%;
+    height: 230px;
+}/*adjusting the size of the banner that helps form part of the nav bar*/
+
+#navbar a.current{
+    text-decoration: underline;
+    cursor: default;
+    color: rgb(178, 247, 52);
+}
+#navbar a.current:hover{
+    color: rgb(178, 247, 52);
+}
+
+.not{
+    transition: transform 0.2s ease-out;
+}
+.not:hover{
+    transform: translate(2px, -4px);
+}

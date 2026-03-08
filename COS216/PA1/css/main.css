@@ -1,0 +1,145 @@
+/* Rey Piater-Boswell u25678592 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');/* Import Merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');/* Import Ubuntu Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');/* Import Geo font */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}/* Above selectors remove decor for all anchor tags */
+
+th, #launch, input[type="text"], select, button{
+    font-family: Merriweather;
+}
+#navbar, #launch h1, footer p{
+    font-family: Geo;
+}
+h1, h2, table td, label{
+    font-family: "Ubuntu Sans";
+}
+label{
+    font-weight: 500;
+}
+
+h1, h2, #constPage{
+    text-align: center;
+}
+
+html{
+    background-color: #ffbbd6;
+    background-image: radial-gradient(circle, #fdc9de, #ec9abb, #eb6c9e);/* creates circle gradient between three colours */
+}
+
+#launch{
+    /*background-color: #EDADC7;*/
+    text-align: center;
+}
+#launch h1{
+    font-size: 230%;
+}
+
+#pa a:hover{
+    color: white;
+}
+#pa{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#pa>li:hover{
+    /*background-color: #8a33aa;*/
+    background-color: #ec9abb9d;
+}
+#pa>li:hover, #rebut:hover, .top:hover, .fav:hover, #filApp:hover{
+    cursor: pointer;
+    -webkit-transform: translate(2px, -3px);
+    -moz-transform: translate(2px, -3px);
+    transform: translate(2px, -3px);
+    box-shadow: -3px 5px 5px rgba(54, 54, 54, 0.664);/* Shadow in bottom left and bottom center w/ 5px blur of box */
+}
+#pa>li{
+    /*background-color: #cf4dff;*/
+    background-color: #ec9abb9d;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select:hover, button:hover{
+    cursor: pointer;
+}
+
+#rebut{
+    font-size: 125%;
+}
+
+#rebut, .top, .fav, #filApp{
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transfrom 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+}
+
+.but{
+    border: 2px solid black;
+}
+
+.top{
+    font-size: 1.1em;
+    padding: 10px;
+    margin: 50px auto 10px auto;
+    text-align: center;
+    width: 8%;
+    border: 2px solid black;
+}
+
+.top a:hover{
+    color: rgb(178, 247, 52);
+}
+.top:hover{
+    background-color: #eb6c9e;
+}
+
+footer{
+    text-align: center;
+}
+
+#logoIm{
+    width: 295px;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+#constPage p{
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+#constPage img{
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    animation: signBob 2.5s linear infinite;
+}
+
+@keyframes signBob{
+    25%{
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    75%{
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    100%{
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}

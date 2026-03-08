@@ -1,0 +1,55 @@
+/* Rey Piater-Boswell u25678592 */
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: #eb6c9e;
+}
+tr:nth-child(odd){
+    background-color: rgba(59, 0, 39, 0.726);
+    color: rgb(178, 247, 52);
+}
+
+th{
+    letter-spacing: 1px;
+    padding: 5px;
+    height: 50px;
+}
+
+tbody td{
+    font-size: 1.2em;
+}
+
+tbody tr{
+    text-align: center;
+    height: 50px;
+}
+
+td img{
+    max-width: 200px;
+}
+
+.planeCol{
+    width: 15%;
+}
+.manCol{
+    width: 10%;
+    padding: 10px;
+}
+
+button{
+    font-size: 1.25em;
+    width: 100%;
+}
+
+.des{
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 350px;
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}

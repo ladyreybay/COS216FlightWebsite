@@ -1,0 +1,107 @@
+<!-- Rey Piater-Boswell u25678592 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page | Up&About Airways</title>
+        <meta charset="UTF-8">
+        <link href="css/navbar.css" rel="stylesheet" type="text/css">
+        <link href="css/book.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.jpg" alt="Banner" class="bannerIm">
+        </header>
+        <header class="sticky">
+            <nav>
+                <ul id="navbar">
+                    <li><a class="current">Book Flights</a></li>
+                    <li class="not"><a href="bookings.html" >Bookings</a></li>
+                    <li class="not"><a href="planes.html" >Planes</a></li>
+                    <li class="not"><a href="favourites.html" >Favourite Planes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="greeting">
+            <h1>Up&About Flight Booking</h1>
+            <p>
+                Thank you for choosing our services today! Please provide your trip's
+                details in the below form.
+                <br>
+                <small>Asterisk (*) indicates required fields</small>
+            </p>
+        </div>
+        <div>
+            <form action="result.html" method="post">
+                <fieldset>
+                    <legend>Enter booking details</legend>
+                    <div id="formFlexContain">
+                        <div class="innerFlex">
+                            <div id="planeChoiceSec">
+                                <label for="plOpt">Plane type:</label>
+                                <select id="plOpt" name="planeOp">
+                                    <option value="airbus330neo">Airbus 330neo</option>
+                                    <option value="bac111">BAC One-Eleven</option>
+                                    <option value="boeing767">Boeing 767</option>
+                                    <option value="boeing777">Boeing 777</option>
+                                </select> *
+                            </div>
+                            <div id="departAirSec">
+                                <label for="departAir">Depart from:</label>
+                                <select id="departAir" name="departureAirport">
+                                    <option value="orThambo">OR Thambo International Airport</option>
+                                    <option value="capeTown">Cape Town International Airport</option>
+                                    <option value="beuWest">Beaufort West Airport</option>
+                                    <option value="alexBay">Alexander Bay Airport</option>
+                                    <option value="alldays">Alldays Airport</option>
+                                    <option value="bloem">Bloemfontein Airport</option>
+                                </select> *
+                            </div>
+                            <div id="departDateSec">
+                                <label for="departDate">Departure Date</label>
+                                <input name="departDate" type="date" id="departDate"> *
+                            </div>
+                            <div id="numPeopleSec">
+                                <label>Number of People</label>
+                                <input type="number" min="1" value="1"> *
+                            </div>
+                        </div>
+                        <div class="innerFlex">
+                            <div id="oneWaySec">
+                                <input type="checkbox" name="oneWayTripCheck" id="oneWayTrip">
+                                <label for="oneWayTrip">One way trip</label>
+                            </div>
+                            <div id="arriveAirSec"> 
+                                <label for="arriveAir">Arrive at:</label>
+                                <select id="arriveAir" name="arrivalAirport">
+                                    <option value="orThambo">OR Thambo International Airport</option>
+                                    <option value="capeTown">Cape Town International Airport</option>
+                                    <option value="beuWest">Beaufort West Airport</option>
+                                    <option value="alexBay">Alexander Bay Airport</option>
+                                    <option value="alldays">Alldays Airport</option>
+                                    <option value="bloem">Bloemfontein Airport</option>
+                                    <option value="heath">Heathrow International Airport</option>
+                                </select> *
+                            </div>
+                            <div id="arriveDateSec">
+                                <label for="arriveDate">Arrival Date</label>
+                                <input name="departDate" type="date" id="arriveDate"> *
+                            </div>
+                            <div id="cabinClassSec">    
+                                <input name="classInp" value="economy" type="radio" id="economyClass" checked><label for="economyClass">Economy Class</label>
+                                <input name="classInp" value="business" type="radio" id="businessClass"><label for="businessClass">Business Class</label>
+                                <input name="classInp" value="firstClass" type="radio" id="firstClass"><label for="firstClass">First Class</label>
+                                *
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <p class="top"><a href="#top">Back to Top</a></p>
+            <p>All rights reserved to &copy;Up&About</p>
+        </footer>
+    </body>
+</html>

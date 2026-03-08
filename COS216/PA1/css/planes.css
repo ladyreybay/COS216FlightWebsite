@@ -1,0 +1,166 @@
+/* Rey Piater-Boswell */
+#Search>div input{
+    width: 30%;
+    margin-right: 0;
+}
+#Search>div button{
+    margin-left: 0;
+}
+
+#butSort{
+    width: 12%;
+}
+
+table{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: #eb6c9e;
+}
+tr:nth-child(odd){
+    background-color: rgba(59, 0, 39, 0.726);
+    color: rgb(178, 247, 52);
+}
+
+th{
+    font-size: 1.35em;
+    letter-spacing: 1px;
+    height: 50px;
+}
+
+tbody td{
+    font-size: 1.2em;
+}
+
+tbody tr{
+    text-align: center;
+    height: 50px;
+}
+
+td img{
+    max-width: 250px;
+}
+td img:hover{
+    cursor: pointer;
+}
+
+.planeCol{
+    width: 15%;
+}
+.manCol{
+    width: 20%;
+    padding: 10px;
+}
+
+.gridSortContain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gridSortContain>div{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.gridSortContain>div input, .gridSortContain>div select, .gridSortContain>div button{
+    font-size: 1.15em;
+}
+span{
+    font-size: 1.25em;
+}
+
+/*#seatTwoSlider{
+    position: relative;
+    min-height: 50px;
+    -webkit-transform: translateX(-80px);
+    -moz-transform: translateX(-80px);
+    transform: translateX(-80px);
+}
+#seatTwoSlider input[type="range"]::-webkit-slider-thumb, #seatTwoSlider input[type="range"]::-moz-range-thumb{
+    border-radius: 50%;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+}
+#seatTwoSlider input[type="range"]{
+    margin-top: 10px;
+    appearance: none;
+    height: 6px;
+    width: 200%;
+    position: absolute;
+    pointer-events: none;
+}
+
+#fromSlid{
+    height: 0px !important;
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    transform: translateY(4px);
+    z-index: 1;
+}*/
+#toSlid{
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    transform: translateX(-12px);
+}
+
+#cargoSlid, #rangeSlid{
+    margin-top: 5px;
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    transform: translateY(6px);
+}
+
+input[type="checkbox"]:hover, .checkLab:hover{
+    cursor: pointer;
+}
+
+.fav{
+    font-size: 1.05em;
+    width: 100%;
+    height: 50px;
+}
+
+#filtersSearch{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+#filtersSearch div{
+    margin: 10px;
+}
+
+#filApp{
+    grid-row: 4/5;
+    grid-column: 1/span 2;
+    width: 25%;
+    background-color: rgb(20, 238, 0);
+    font-size: 18px;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+}
+#filApp:hover{
+    background-color: rgb(41, 218, 25);
+}
+
+#filDiv{
+    width: 75%;
+    margin: 0 auto 0 auto;
+    margin-bottom: 25px;
+    background-color: rgba(59, 0, 39, 0.726);
+    color: rgb(178, 247, 52);
+    border: 2px solid black;
+    font-size: larger;
+}
+
+#manuFil select{
+    font-size: 18px;
+}
