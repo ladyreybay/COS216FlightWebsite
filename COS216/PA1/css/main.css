@@ -1,4 +1,4 @@
-/* Rey Piater-Boswell u25678592 */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');/* Import Merriweather font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');/* Import Ubuntu Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');/* Import Geo font */
@@ -142,4 +142,5 @@ footer{
         -moz-transform: translateY(-10px);
         transform: translateY(-10px);
     }
+
 }
