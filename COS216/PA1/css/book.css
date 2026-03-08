@@ -1,4 +1,4 @@
-/* Rey Piater-Boswell u25678592 */
+
 
 #greeting{
     text-align: center;
@@ -74,4 +74,5 @@ fieldset input[type="select"], fieldset input[type="date"], fieldset input[type=
 
 input[type="date"], select[name="planeOp"]{
     width: 45%;
+
 }
