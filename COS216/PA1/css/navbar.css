@@ -1,4 +1,4 @@
-/* Rey Piater-Boswell u25678592 */
+
 #navbar{
     list-style-type: none;
     display: flex;
@@ -48,4 +48,5 @@
 }
 .not:hover{
     transform: translate(2px, -4px);
+
 }
